@@ -70,6 +70,59 @@
     let result = 5> 4; 
     alert (result); 
     alert (2>1);
+    alert (true || true); // true
+    alert ( false || true); // true
+    alert ( true || false); //true
+    alert ( false || false); // false
+    let hour = 9;
+    let isWeekend = true;
+    if (hour < 10 || hour > 18 || isWeekend) { 
+      alert( 'The office is closed.');
+    }
+    console.log (hour)
+    alert( 1 || 0 ); // 1 (1 is truthy)
+
+   alert( null || 1 ); // 1 (1 is the first truthy value)
+   alert( null || 0 || 1 ); // 1 (the first truthy value)
+
+    alert( undefined || null || 0 ); // 0 (all falsy, returns the last value)
+   let firstName = "";
+   let lastName = "";
+   let nickName = "";
+   alert (firstName || lastName || nickName || "Anonymous");
+   alert ( true && true); // true
+   alert ( false && true ) ; //false
+   alert ( true && false); // false
+   alert ( false && false ); // false
+   let hour = 12;
+   let minute = 30; 
+   if (hour == 12 && minute == 30) { 
+    alert ( 'The time is 12:30'
+    )}
+    // if the first operand is truthy,
+    // AND returns the second operand: OR is the oposite
+    alert (1&& 0); // 0
+    alert (1&&5); //5
+    // if the first operand is falsy,
+    //AND returns it. The second operand is ignored
+    alert (null && 5); // null
+    alert ( 0 && "no matter what"); // 0
+    alert ( 1 && 2 && null && 3); // null
+    // when all values are truthy,
+    // the last value is returned
+    alert ( 1 && 2 && 3) // 3, the last one
+   if (1 && 0) { //evaluated as true && false}
+   alert ("won't work, because the result is falsy");}
+   alert (! true); // false
+   alert ( !0); // true
+   // ! NOT converts the operand to boolean type
+   // Then returns the inverse value
+   alert ( !!"non-empty string"); // true
+   alert (!!null); // false
+   //double NOT !! is sometimes used for convertng a value to boolean type
+   alert (Boolean ("non-empty string")); // true
+   alert (Boolea (null) ); // false
+   
 
   </script>
 </body>
